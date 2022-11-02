@@ -55,4 +55,6 @@ if __name__ == "__main__":
     sub = Subject("mathe")
     sub.add_grade(Grade(4.0, "1.1.11"))
     sub.add_grade(Grade(5.0, "2.2.22"))
+    sub.add_grade(Grade(6.0, "3.3.33"))
+    sub.add_grade(Grade(3.5, "4.4.44"))
     print(sub.average)

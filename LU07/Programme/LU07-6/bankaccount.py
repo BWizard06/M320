@@ -2,7 +2,6 @@ from customer import Customer
 
 class BankAccount: 
 
-
     def __init__(self, owner: Customer, first_deposit: float, interest: float):
         self.__owner = owner
         self._balance = first_deposit
@@ -43,7 +42,7 @@ class BankAccount:
         self.__interest = value
 
     def print(self):
-        print("""Kundennamen: {self.owner.name}
+        print(f"""Kundennamen: {self.owner.name}
 Saldo: {self.balance}
 Zinssatz: {self.interest}""")
 

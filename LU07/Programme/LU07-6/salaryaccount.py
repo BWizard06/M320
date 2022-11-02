@@ -16,6 +16,7 @@ class SalaryAccount(BankAccount):
     def overdraw(self, amount):
         self.__overdraw += amount
 
+# es muss noch kontrolliert werden, ob es auch über den Überzug geht
     def withdraw_money(self, amount):
         print(f"\tBezug von {self.type}")
         if self.balance - amount >= 0:
